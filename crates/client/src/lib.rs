@@ -365,14 +365,14 @@ mod tests {
         std::env::set_var("RUST_LOG", "debug");
         tracing_subscriber::fmt::init();
 
-        let mut conn = Client::connect(OciBackend::Docker, "cicada-buildkitd".to_owned())
+        let mut conn = Client::connect(OciBackend::Docker, "katoa-buildkitd".to_owned())
             .await
             .unwrap();
         dbg!(conn.info().await.unwrap());
 
         let session = conn
             .session(SessionOptions {
-                name: "cicada".into(),
+                name: "katoa".into(),
                 ..Default::default()
             })
             .await

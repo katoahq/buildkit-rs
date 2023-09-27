@@ -23,11 +23,10 @@ This is a Rust client library for buildkit.
 - [buildkit-rs-dockerfile](/) - A library for parsing and converting Dockerfiles
   to LLB (this is mostly for validation and testing, not for production use)
 
-
 ## Testing
 
 ```shell
-docker run -d --name buildkitd --privileged moby/buildkit:latest 
+docker run -d --name buildkitd --privileged moby/buildkit:latest
 export BUILDKIT_HOST=docker-container://buildkitd
 cargo run --example test --package buildkit-rs-llb | buildctl b --progress plain --no-cache
 ```
@@ -60,7 +59,7 @@ Rust client library for buildkit.
 
 It is a similar project, we did draw some inspiration from its API, but it is
 not maintained anymore and it is not compatible with the latest buildkit
-version. This project is backed by [Cicada](https://cicada.build) and which
+version. This project is backed by [Katoa](https://github.com/katoahq/katoa) and which
 comes first when it comes to priorities.
 
 ### Why not use the [buildkit Go client](https://github.com/moby/buildkit) directly?
@@ -83,4 +82,4 @@ open an issue or a PR as soon as possible so we can discuss it and ensure it
 fits the goals of the project + we can avoid duplicate work.
 
 We also are welcome to discuss the project in the
-[Cicada Discord](https://cicada.build/discord) in the `#buildkit-rs` channel.
+[Katoa Discord](https://discord.gg/7qNBeGmB5A) in the `#buildkit-rs` channel.
