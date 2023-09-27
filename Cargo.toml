@@ -22,7 +22,7 @@ members = ["crates/*"]
 [workspace.package]
 version = "0.1.0"
 edition = "2021"
-authors = ["Grant Gurvis", "cicada.build"]
-homepage = "https://cicada.build"
+authors = ["Grant Gurvis", "cicada.build", "katoa maintainers"]
+homepage = "https://github.com/katoahq"
 license = "Apache-2.0 OR MIT"
-repository = "http://github.com/cicadahq/buildkit-rs"
+repository = "http://github.com/katoahq/buildkit-rs"
